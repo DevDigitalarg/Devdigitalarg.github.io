@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devidigital</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" href="/images/DevDigital__1_-removebg-preview.png">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="logo"><img src="images/DevDigital__1.png" alt="Logo de la Empresa"></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="language-dropdown">
+                    <button onclick="toggleLanguageMenu()">Idioma</button>
+                    <ul class="dropdown-menu" id="languageMenu">
+                        <li><button onclick="setLanguage('es')">Español</button></li>
+                        <li><button onclick="setLanguage('en')">English</button></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+
+<div class="encabezado-img">
+    <h1 id="main-title">DEVDIGITAL</h1>
+    <p id="main-description">PROGRAMACION & MODELADO</p>
+    <p id="main-tagline">Siempre conectados</p>
+</div>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2 id="about-title">Sobre Devdigital</h2>
+        <p id="about-text">DevDigital es una empresa fundada por Brian, Nicolás y Marcos, estudiantes de Licenciatura en Producción de Videojuegos y Entretenimiento Digital. Con más de un año de experiencia en programación web, utilizando tecnologías como HTML, CSS y JavaScript, además de modelado 3D en Blender y Unity, nuestro equipo se compromete a desarrollar soluciones innovadoras y de alta calidad en el ámbito del entretenimiento digital. Nos especializamos en la creación de experiencias interactivas y dinámicas que no solo entretienen, sino que también inspiran a nuestros usuarios.</p>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Proyectos</h2>
+    <div class="project-grid">
+        <div class="project-item">
+            <h3>Club Atlético Belgrano</h3>
+            <p class="project-description es">Esta sección está dedicada a la información sobre los refuerzos del Club Atlético Belgrano de Córdoba. Además, cuenta con un sistema de login y registro para acceder a contenido exclusivo.</p>
+            <p class="project-description en" style="display:none;">This section is dedicated to information about the reinforcements of Club Atlético Belgrano in Córdoba. It also features a login and registration system for accessing exclusive content.</p>
+            <img src="/images/brian.gif" alt="Proyecto 1">
+        </div>
+        <div class="project-item">
+            <h3>Atletico de Rafaela</h3>
+            <p class="project-description es">Tienda de productos de Atletico de Rafaela en la cual tiene animaciones y un sistema de registro y logueo.</p>
+            <p class="project-description en" style="display:none;">Online store for Atletico de Rafaela products featuring animations and a registration and login system.</p>
+            <img src="/images/marcosxd.gif" alt="Proyecto 2">
+        </div>
+        <div class="project-item">
+            <h3>Girls Band Cry</h3>
+            <p class="project-description es">El juego cuenta con una tienda para adquirir su CD y ver el tráiler, además de un sistema de registro y inicio de sesión muy atractivo.</p>
+            <p class="project-description en" style="display:none;">The game features a store to purchase their CD and watch the trailer, along with a very attractive registration and login system.</p>
+            <img src="/images/mizoreee.gif" alt="Proyecto 3">
+        </div>
+        <div class="project-item">
+            <h3>Abandoned Town</h3>
+            <p class="project-description es">Un camino en ruinas que refleja el paso del tiempo, con casas deterioradas y naturaleza reclamando el espacio. Ideal para crear una atmósfera de desolación, perfecto para proyectos de videojuegos.</p>
+            <p class="project-description en" style="display:none;">A pathway that reflects the passage of time, lined with dilapidated houses and nature reclaiming the space. Ideal for creating an atmosphere of desolation, perfect for video game projects that seek to evoke mystery and abandonment.</p>
+            <img src="/images/Bosquemizore.gif" alt="Proyecto 4">
+        </div>
+        <div class="project-item">
+            <h3>Shadows of the Past</h3>
+            <p class="project-description es">Un render 3D creado en Blender que transporta al espectador a un oscuro y desolado pasillo subterráneo. La escena está impregnada de una atmósfera de terror, acentuada por la iluminación y los detalles sutiles que mejoran al render.</p>
+            <p class="project-description en" style="display:none;">A 3D render created in Blender that transports the viewer to a dark and desolate underground hallway. The scene is infused with a horror atmosphere, enhanced by lighting and subtle details that elevate the overall render.</p>
+            <img src="/images/pasillomizore.gif" alt="Proyecto 5">
+        </div>
+        <div class="project-item">
+            <h3>Lost in the Woods</h3>
+            <p class="project-description es"> Un entorno que simula un bosque natural, diseñado con atención al detalle para replicar la diversidad de flora y fauna. Este bosque cuenta con árboles realistas, vegetación variada,Ideal para proyectos de videojuegos o simulaciones que buscan ofrecer una experiencia auténtica.</p>
+            <p class="project-description en" style="display:none;">An environment that simulates a natural forest, designed with attention to detail to replicate the diversity of flora and fauna. This forest features realistic trees and varied vegetation, making it ideal for video game projects or simulations that aim to provide an authentic experience.</p>
+            <img src="/images/unitymizore.gif" alt="Proyecto 6">
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 id="contact-title">Contacto</h2>
+    <div class="contact-info">
+        <div class="contact-item">
+            <p class="contact-description es">Puedes encontrarnos en:</p>
+            <p class="contact-description en" style="display:none;">You can find us at:</p>
+            <div class="contact-icons">
+                <a href="mailto:teamdevdigital@gmail.com">
+                    <img src="/images/gmail-icon.png" alt="Gmail" class="icon">
+                </a>
+                <a href="https://www.instagram.com/team.devdigital/" target="_blank">
+                    <img src="/images/instagram-icon.png" alt="Instagram" class="icon">
+                </a>
+                <a href="https://wa.link/8p7ice" target="_blank">
+                    <img src="/images/phone-icon.png" alt="WhatsApp" class="icon">
+                </a>
+            </div>
+            <p class="contact-description es">¡No dudes en contactarnos!</p>
+            <p class="contact-description en" style="display:none;">Feel free to contact us!</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Devidigital. Todos los derechos reservados.</p>
+</footer>
+
+<script src="/scripts/script.js"></script>
+<script>
+const content = {
+    es: {
+        title: "DEVDIGITAL",
+        description: "PROGRAMACION & MODELADO",
+        tagline: "Siempre conectados",
+        aboutTitle: "Sobre Devdigital",
+        aboutText: "DevDigital es una empresa fundada por Brian, Nicolás y Marcos, estudiantes de Licenciatura en Producción de Videojuegos y Entretenimiento Digital. Con más de un año de experiencia en programación web, utilizando tecnologías como HTML, CSS y JavaScript, además de modelado 3D en Blender y Unity, nuestro equipo se compromete a desarrollar soluciones innovadoras y de alta calidad en el ámbito del entretenimiento digital. Nos especializamos en la creación de experiencias interactivas y dinámicas que no solo entretienen, sino que también inspiran a nuestros usuarios.",
+        contactTitle: "Contáctanos",
+        contactText: "Puedes encontrarnos en:",
+        contactFooter: "¡No dudes en contactarnos!"
+    },
+    en: {
+        title: "DEVDIGITAL",
+        description: "PROGRAMMING & MODELING",
+        tagline: "Always connected",
+        aboutTitle: "About Devdigital",
+        aboutText: "DevDigital was created by Brian Nicolás and Marcos, students of Bachelor in Video Game and Digital Entertainment Production. Both hold several certificates in programming, IT studies, introduction to programming, as well as 3D modeling in Blender and Unity.",
+        contactTitle: "Contact Us",
+        contactText: "You can find us at:",
+        contactFooter: "Feel free to contact us!"
+    }
+};
+
+function setLanguage(language) {
+    document.getElementById('main-title').innerText = content[language].title;
+    document.getElementById('main-description').innerText = content[language].description;
+    document.getElementById('main-tagline').innerText = content[language].tagline;
+    document.getElementById('about-title').innerText = content[language].aboutTitle;
+    document.getElementById('about-text').innerText = content[language].aboutText;
+
+    const descriptionsEs = document.querySelectorAll('.project-description.es');
+    const descriptionsEn = document.querySelectorAll('.project-description.en');
+    descriptionsEs.forEach(desc => {
+        desc.style.display = (language === 'es') ? 'block' : 'none';
+    });
+    descriptionsEn.forEach(desc => {
+        desc.style.display = (language === 'en') ? 'block' : 'none';
+    });
+
+    
+    const contactDescriptionsEs = document.querySelectorAll('.contact-description.es');
+    const contactDescriptionsEn = document.querySelectorAll('.contact-description.en');
+    contactDescriptionsEs.forEach(desc => {
+        desc.style.display = (language === 'es') ? 'block' : 'none';
+    });
+    contactDescriptionsEn.forEach(desc => {
+        desc.style.display = (language === 'en') ? 'block' : 'none';
+    });
+
+    document.getElementById('contact-title').innerText = content[language].contactTitle;
+}
+
+function toggleLanguageMenu() {
+    const menu = document.getElementById('languageMenu');
+    menu.classList.toggle('show');
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.language-dropdown button')) {
+        const dropdowns = document.getElementsByClassName("dropdown-menu");
+        for (let i = 0; i < dropdowns.length; i++) {
+            const openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+</script>
+
+</body>
+</html>
